@@ -8,6 +8,8 @@ CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
 exit
 
+GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+
 mysql -u sammy -p
 systemctl status mysql.service
 
